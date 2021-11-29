@@ -1,18 +1,36 @@
+/* Fonts from Google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Source+Serif+Pro:wght@300;400;600&display=swap");
+
+/* Clear browser default padding and margins */
 * {
   margin: 0;
   padding: 0;
 }
 
+/* Default body styles */
 body {
+  font-family: "Lato", sans-serif;
   font-size: 18px;
+  letter-spacing: 1.2px;
 }
 
-.logo {
+/* Header and nav font */
+h1,
+h2,
+.nav-link {
+  font-family: "Source Serif Pro", serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.logo,
+.intro {
   display: flex;
   justify-content: center;
   background-color: #e4ff58;
 }
 
+/* Navigation */
 .nav {
   display: flex;
   justify-content: center;
@@ -29,8 +47,7 @@ body {
   border-bottom: 1px solid #ff368c;
   border-radius: 10px;
   text-shadow: 1px 1px #fff;
-  font-weight: 600;
-  letter-spacing: 1.2px;
+  font-size: 1.3rem;
   text-transform: uppercase;
 }
 
@@ -38,4 +55,22 @@ body {
 .nav-link:active {
   color: #000;
   background-color: #ff368c;
+}
+
+.container {
+  position: relative;
+  color: #fff;
+}
+
+.hero-image {
+  padding: 0.5rem;
+  border-radius: 20px;
+}
+
+.intro-text {
+  position: absolute;
+  top: 40%;
+  left: 20%;
+  text-transform: uppercase;
+  text-shadow: 1px 1px #ff368c;
 }
