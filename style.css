@@ -21,10 +21,12 @@ h2,
   font-family: "Source Serif Pro", serif;
   font-size: 2.5rem;
   font-weight: 600;
+  margin: 1rem;
 }
 
 .logo,
-.intro {
+.intro,
+.nav {
   display: flex;
   justify-content: center;
   background-color: #e4ff58;
@@ -32,10 +34,8 @@ h2,
 
 /* Navigation */
 .nav {
-  display: flex;
-  justify-content: center;
   padding: 1rem;
-  background-color: #e4ff58;
+
   border-top: 1px solid #fff;
 }
 
@@ -73,4 +73,38 @@ h2,
   left: 20%;
   text-transform: uppercase;
   text-shadow: 1px 1px #ff368c;
+}
+
+/* Make columns*/
+/* code snippet from https://www.w3schools.com/howto/howto_css_two_columns.asp  */
+.column-2 {
+  float: left;
+  width: 50%;
+}
+
+.column-3 {
+  float: left;
+  width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+footer {
+  background-color: #e4ff58;
+  height: 100px;
+}
+
+.social-links a {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.social-links li {
+  display: inline;
 }
