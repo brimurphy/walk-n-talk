@@ -24,18 +24,21 @@ h2,
   margin: 1rem;
 }
 
+/* Center content in div */
+.text-center {
+  display: flex;
+  justify-content: center;
+}
+
 .logo,
 .intro,
 .nav {
-  display: flex;
-  justify-content: center;
   background-color: #e4ff58;
 }
 
 /* Navigation */
 .nav {
   padding: 1rem;
-
   border-top: 1px solid #fff;
 }
 
@@ -103,6 +106,8 @@ footer {
 .social-links a {
   list-style-type: none;
   text-decoration: none;
+  padding: 10px;
+  font-size: 1.8rem;
 }
 
 .social-links li {
