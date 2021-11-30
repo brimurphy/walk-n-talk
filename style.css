@@ -90,6 +90,11 @@ h2,
   width: 33.33%;
 }
 
+.column-4 {
+  float: left;
+  width: 25%;
+}
+
 /* Clear floats after the columns */
 .row:after {
   content: "";
