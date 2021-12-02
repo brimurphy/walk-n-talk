@@ -158,6 +158,35 @@ a {
   margin: 0 20px 40px;
 }
 
+/* Contact Form */
+.contact-form {
+  background-color: #e4ff58;
+  border: 1px solid #000;
+  border-radius: 10px;
+  margin: 30px 0;
+  padding: 40px;
+  width: 50%;
+  text-align: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin: 5px;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+/* Increase button size */
+.contact-btn {
+  font-size: 1.2rem;
+  width: 100px;
+}
+
+/* Change button colour when hovered over */
+.contact-btn:hover {
+  background-color: #ff368c;
+}
+
 /* Footer */
 footer {
   font-size: 0.8rem;

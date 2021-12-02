@@ -63,13 +63,45 @@
       <!--Navigation links-->
       <div class="nav text-center">
         <a href="index.html" class="nav-link">Home</a>
-        <a href="#nav-about" class="nav-link">About</a>
-        <a href="#nav-locations" class="nav-link">Locations</a>
-        <a href="#" class="nav-link">Contact</a>
+        <a href="index.html#nav-about" class="nav-link">About</a>
+        <a href="index.html#nav-locations" class="nav-link">Locations</a>
+        <a href="contact.html" class="nav-link">Contact</a>
       </div>
     </header>
     <!--Contact form-->
-    <section class="contact-form"></section>
+    <section class="contact-page">
+      <h2 class="text-center">Contact</h2>
+      <!--Heading underline-->
+      <hr class="header-underline" />
+      <div class="text-center">
+        <form class="contact-form" action="">
+          <label for="firstname">First Name:</label> <br />
+          <input type="text" id="firstname" name="firstname" /> <br />
+          <label for="lastname">Last Name:</label> <br />
+          <input type="text" id="lastname" name="lastname" /> <br />
+          <label for="email">Email:</label> <br />
+          <input type="email" id="email" name="email" /> <br />
+          <label for="group-location">Tallaght</label>
+          <input
+            type="radio"
+            id="tallaght-group"
+            class="pink"
+            name="group-location"
+          />
+          <label for="group-location">Bray</label>
+          <input
+            type="radio"
+            id="bray-group"
+            class="pink"
+            name="group-location"
+          />
+          <br />
+          <textarea name="message" id="message" cols="30" rows="10"></textarea>
+          <br />
+          <input type="submit" value="Send" class="contact-btn" />
+        </form>
+      </div>
+    </section>
     <!--Footer-->
     <footer>
       <div class="row">
@@ -80,13 +112,15 @@
               <a href="index.html" class="footer-nav-item">Home</a>
             </li>
             <li>
-              <a href="#nav-about" class="footer-nav-item">About</a>
+              <a href="index.html#nav-about" class="footer-nav-item">About</a>
             </li>
             <li>
-              <a href="#nav-locations" class="footer-nav-item">Locations</a>
+              <a href="index.html#nav-locations" class="footer-nav-item"
+                >Locations
+              </a>
             </li>
             <li>
-              <a href="#" class="footer-nav-item">Contact</a>
+              <a href="contact.html" class="footer-nav-item">Contact</a>
             </li>
           </ul>
         </div>
