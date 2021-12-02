@@ -21,7 +21,7 @@ h3,
 .nav-link {
   font-family: "Source Serif Pro", serif;
   font-weight: 600;
-  margin: 1.2rem;
+  margin-top: 1.2rem;
   margin-bottom: 0;
 }
 
@@ -85,6 +85,7 @@ a {
   border-radius: 20px;
 }
 
+/* Position text in hero image */
 .intro-text {
   position: absolute;
   top: 40%;
@@ -159,10 +160,12 @@ a {
 
 /* Footer */
 footer {
+  font-size: 0.8rem;
   background-color: #e4ff58;
-  height: 125px;
+  height: 100px;
 }
 
+/* Footer navigation */
 .footer-nav a {
   color: #000;
 }
@@ -180,6 +183,13 @@ footer {
   list-style-type: none;
 }
 
+/*  */
+.footer-wrap {
+  text-align: center;
+  padding-top: 80px;
+}
+
+/* Social links */
 .social-links a {
   color: #000;
   list-style-type: none;
