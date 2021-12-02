@@ -14,14 +14,15 @@ body {
   letter-spacing: 1.2px;
 }
 
-/* Header and nav font */
+/* Header and nav text styling */
 h1,
 h2,
 h3,
 .nav-link {
   font-family: "Source Serif Pro", serif;
   font-weight: 600;
-  margin: 1rem;
+  margin: 1.2rem;
+  margin-bottom: 0;
 }
 
 h1 {
@@ -32,12 +33,18 @@ h2 {
   font-size: 2.2rem;
 }
 
+/* Remove underline from links */
+a {
+  text-decoration: none;
+}
+
 /* Center content in div */
 .text-center {
   display: flex;
   justify-content: center;
 }
 
+/* Header */
 .logo,
 .intro,
 .nav {
@@ -87,7 +94,12 @@ h2 {
 }
 
 /* Make columns*/
-/* code snippet from https://www.w3schools.com/howto/howto_css_two_columns.asp  */
+/* Original code from https://www.w3schools.com/howto/howto_css_two_columns.asp  */
+.column-lg {
+  float: left;
+  width: 75%;
+}
+
 .column-2 {
   float: left;
   width: 50%;
@@ -110,6 +122,41 @@ h2 {
   clear: both;
 }
 
+.row {
+  margin: 0 7%;
+}
+
+/* Add underline to section headings */
+.header-underline {
+  width: 10%;
+  border: 2px solid #ff368c;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+/* About section */
+/* Center about section text in blockquote */
+.text-wrap {
+  text-align: center;
+  padding: 50px 0;
+  width: 50%;
+}
+
+/* Add some space above and below images in about section */
+.about-img {
+  margin: 20px 0;
+}
+
+/* Location section */
+
+.highlight {
+  text-shadow: 1px 1px #ff368c;
+}
+
+.location-map {
+  margin: 0 20px 40px;
+}
+
 /* Footer */
 footer {
   background-color: #e4ff58;
@@ -128,8 +175,7 @@ footer {
   margin-top: 0.5rem;
 }
 
-.footer-nav li,
-.footer-nav a {
+.footer-nav li {
   text-decoration: none;
   list-style-type: none;
 }
@@ -137,7 +183,6 @@ footer {
 .social-links a {
   color: #000;
   list-style-type: none;
-  text-decoration: none;
   margin: 10px;
   padding: 10px;
   font-size: 2rem;
