@@ -317,11 +317,13 @@ footer {
     padding: 15px;
   }
 
+  /* increase contact form width for mobile */
   .contact-form {
     margin: 5%;
     width: 90%;
   }
 
+  /* Reduce text area size */
   textarea {
     height: 5em;
     width: 10em;
