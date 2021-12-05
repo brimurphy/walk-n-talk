@@ -96,6 +96,19 @@ a {
 
 /* Make columns*/
 /* Original code from https://www.w3schools.com/howto/howto_css_two_columns.asp  */
+.row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .column-lg {
   float: left;
   width: 75%;
@@ -116,17 +129,6 @@ a {
   width: 25%;
 }
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.row {
-  margin: 0 7%;
-}
-
 /* Add underline to section headings */
 .header-underline {
   width: 10%;
@@ -145,17 +147,21 @@ a {
 
 /* Add some space above and below images in about section */
 .about-img {
-  margin: 20px 0;
+  margin: 20px 10px;
 }
 
 /* Location section */
-
+/* Highlight important text */
 .highlight {
   text-shadow: 1px 1px #ff368c;
 }
 
+/* Add margin to bottom and sides of maps */
 .location-map {
-  margin: 0 20px 40px;
+  margin: 20px;
+  float: left;
+  width: 550px;
+  height: 400px;
 }
 
 /* Contact Form */
@@ -187,6 +193,11 @@ a {
   background-color: #ff368c;
 }
 
+textarea {
+  height: 10em;
+  width: 20em;
+}
+
 /* Footer */
 footer {
   font-size: 0.8rem;
@@ -212,7 +223,7 @@ footer {
   list-style-type: none;
 }
 
-/*  */
+/* Center Push text to bottom of div */
 .footer-wrap {
   text-align: center;
   padding-top: 80px;
@@ -233,4 +244,102 @@ footer {
 
 .social-links li {
   display: inline;
+}
+
+/* Responsive styles */
+/* Laptop styles max 1024px */
+@media screen and (max-width: 1024px) {
+  body {
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+
+  /* Set hero-image max width to width of viewport */
+  .hero-image {
+    max-width: 100vw;
+  }
+
+  /* Resize image so it doesn't cover text  */
+  .about-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  /* give each map 50% of available width */
+  /* 40% width with 10% padding (5% each side) */
+  .column-tablet {
+    padding: 5%;
+    max-width: 40%;
+  }
+
+  /* Maps take up 100% of available space */
+  .location-map {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* Tablet styles max 768px */
+@media screen and (max-width: 768px) {
+  /* Give each column 50% of available space */
+  .column-lg {
+    width: 50%;
+  }
+
+  .column-4 {
+    width: 50%;
+  }
+}
+
+/* Mobile view styles */
+@media screen and (max-width: 320px) {
+  /* Reduce intro and navigation font */
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h1 ~ p {
+    font-size: 0.6rem;
+  }
+  /* Reduce navigation link font to fit screen */
+  .nav-link {
+    font-size: 0.6rem;
+  }
+
+  /* Remove images from about section and maps in mobile view */
+  .column-remove {
+    display: none;
+  }
+
+  /* reduce space between about section text */
+  .text-wrap {
+    padding: 15px;
+  }
+
+  .contact-form {
+    margin: 5%;
+    width: 90%;
+  }
+
+  textarea {
+    height: 5em;
+    width: 10em;
+  }
+
+  /* Adjust footer sizing */
+  footer {
+    font-size: 0.6rem;
+    height: 80px;
+  }
+
+  .social-links a {
+    margin: 5px;
+    padding: 5px;
+    font-size: 1.5rem;
+  }
+
+  .footer-wrap {
+    padding-top: 55px;
+  }
 }
